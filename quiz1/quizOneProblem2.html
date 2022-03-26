@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Problem 2 | Jheyvie Santos</title>
+    </head>
+    <body>
+        <script>
+            const voters =  [
+                {name: "John Doe", isRegistered: true},
+                {name: "Nick Fury", isRegistered: false},
+                {name: "Steve Rogers", isRegistered: true},
+                {name: "Tony Stark", isRegistered: false},
+                {name: "Stephen Strange", isRegistered: false}
+                ];
+                console.log("List of Names: \n", voters);
+
+                let registeredVoters = voters.filter((voters) => voters.isRegistered === true);
+                let nonRegisteredVoters = voters.filter((voters) => voters.isRegistered === false);
+                // console.log("Non Registered Voters: \n" ,nonRegisteredVoters);
+                // console.log("Registered Voters: \n" ,registeredVoters);
+                
+                console.log("Registered Voters: \n");
+                registeredVoters.forEach((voters,index) => {
+                    console.log(index+1,".)",voters.name)
+                });
+                console.log("Non Registered Voters: \n");
+                nonRegisteredVoters.forEach((voters,index) => {
+                    console.log(index+1,".)",voters.name)
+                });
+        </script>
+    </body>
+</html>
